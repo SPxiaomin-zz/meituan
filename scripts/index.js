@@ -18,8 +18,6 @@ window.onload = function() {
       // 当输入格式有误时，提示出错
       inputNEle.style.borderColor = 'red';
       nthMaxValue.innerHTML = '输入有误，请重新输入!'
-
-      return;
     } else {
       // 当输入格式无误，求出正确结果并显示
       inputNEle.style.borderColor = '';

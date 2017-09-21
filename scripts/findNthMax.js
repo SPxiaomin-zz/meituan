@@ -13,11 +13,16 @@ function findNthMax(n) {
   // 当 n 输入不再 [1, len] 范围的时候，返回 -1
   if (n < 1 || n > len) return -1;
 
-  // 对数组进行降续排列
   var concatArr = a.concat(b);
+
+  var topN = topK(concatArr, n, function(a,b) { return a < b; });
+  return topN[topN.length - 1];
+
+  /*
+  对数组进行降续排列
   concatArr.sort(function(a, b) {
     return b - a;
   });
-
   return concatArr[n - 1];
+  */
 }
