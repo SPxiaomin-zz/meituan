@@ -1,8 +1,8 @@
 window.onload = function() {
-  var inputNEle = document.querySelector('#input_n');
-  var nthMaxValue = document.querySelector('#nth_max_value');
+  var inputNEle = document.querySelector('.input_n');
+  var nthMaxValue = document.querySelector('.nth_max_value');
 
-  document.querySelector('#input_finish').onclick= function() {
+  document.querySelector('.input_finish').onclick= function() {
     var inputN = inputNEle.value.trim();
 
     // 当输入为空时，提示出错
