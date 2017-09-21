@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font: 14px/1.4286 'Microsoft YaHei';
+}
+
+#input_n {
+  width: 200px;
+  border: 1px solid;
+  padding: 5px;
+  outline: none;
+}
+
+#input_finish {
+  height: 26px;
+  border: 1px solid;
+  border-radius: 6px;
+  background-color: #fff;
+  outline: none;
+  transition: 0.5s all;
+}
+
+#input_finish:hover {
+  color: rgb(104, 188, 193);
+  border-color: rgb(104, 188, 193);
+  cursor: pointer;
+}
